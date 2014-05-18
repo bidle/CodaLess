@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E468B9C019290CAA00FA74DC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E468B9BF19290CAA00FA74DC /* Cocoa.framework */; };
+		E468B9CA19290CAA00FA74DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E468B9C819290CAA00FA74DC /* InfoPlist.strings */; };
+		E468B9D419290D2300FA74DC /* CodaLess.m in Sources */ = {isa = PBXBuildFile; fileRef = E468B9D319290D2300FA74DC /* CodaLess.m */; };
+		E468BDA51929170900FA74DC /* less.js in Resources */ = {isa = PBXBuildFile; fileRef = E468BDA41929170900FA74DC /* less.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E468B9BC19290CA900FA74DC /* CodaLess.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodaLess.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E468B9BF19290CAA00FA74DC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E468B9C219290CAA00FA74DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E468B9C319290CAA00FA74DC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E468B9C419290CAA00FA74DC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E468B9C719290CAA00FA74DC /* CodaLess-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CodaLess-Info.plist"; sourceTree = "<group>"; };
+		E468B9C919290CAA00FA74DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E468B9CB19290CAA00FA74DC /* CodaLess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodaLess-Prefix.pch"; sourceTree = "<group>"; };
+		E468B9D119290CFD00FA74DC /* CodaPlugInsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
+		E468B9D219290D2300FA74DC /* CodaLess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodaLess.h; sourceTree = "<group>"; };
+		E468B9D319290D2300FA74DC /* CodaLess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodaLess.m; sourceTree = "<group>"; };
+		E468BDA41929170900FA74DC /* less.js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = less.js; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E468B9B919290CA900FA74DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E468B9C019290CAA00FA74DC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E468B9B319290CA700FA74DC = {
+			isa = PBXGroup;
+			children = (
+				E468B9C519290CAA00FA74DC /* CodaLess */,
+				E468B9BE19290CA900FA74DC /* Frameworks */,
+				E468B9BD19290CA900FA74DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E468B9BD19290CA900FA74DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E468B9BC19290CA900FA74DC /* CodaLess.codaplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E468B9BE19290CA900FA74DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E468B9BF19290CAA00FA74DC /* Cocoa.framework */,
+				E468B9C119290CAA00FA74DC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E468B9C119290CAA00FA74DC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E468B9C219290CAA00FA74DC /* Foundation.framework */,
+				E468B9C319290CAA00FA74DC /* CoreData.framework */,
+				E468B9C419290CAA00FA74DC /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E468B9C519290CAA00FA74DC /* CodaLess */ = {
+			isa = PBXGroup;
+			children = (
+				E468B9C619290CAA00FA74DC /* Supporting Files */,
+			);
+			path = CodaLess;
+			sourceTree = "<group>";
+		};
+		E468B9C619290CAA00FA74DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E468B9C719290CAA00FA74DC /* CodaLess-Info.plist */,
+				E468B9D119290CFD00FA74DC /* CodaPlugInsController.h */,
+				E468B9C819290CAA00FA74DC /* InfoPlist.strings */,
+				E468B9CB19290CAA00FA74DC /* CodaLess-Prefix.pch */,
+				E468B9D219290D2300FA74DC /* CodaLess.h */,
+				E468B9D319290D2300FA74DC /* CodaLess.m */,
+				E468BDA41929170900FA74DC /* less.js */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E468B9BB19290CA900FA74DC /* CodaLess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E468B9CE19290CAA00FA74DC /* Build configuration list for PBXNativeTarget "CodaLess" */;
+			buildPhases = (
+				E468B9B819290CA900FA74DC /* Sources */,
+				E468B9B919290CA900FA74DC /* Frameworks */,
+				E468B9BA19290CA900FA74DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodaLess;
+			productName = CodaLess;
+			productReference = E468B9BC19290CA900FA74DC /* CodaLess.codaplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E468B9B419290CA800FA74DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Theo Weidmann";
+			};
+			buildConfigurationList = E468B9B719290CA800FA74DC /* Build configuration list for PBXProject "CodaLess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E468B9B319290CA700FA74DC;
+			productRefGroup = E468B9BD19290CA900FA74DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E468B9BB19290CA900FA74DC /* CodaLess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E468B9BA19290CA900FA74DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E468B9CA19290CAA00FA74DC /* InfoPlist.strings in Resources */,
+				E468BDA51929170900FA74DC /* less.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E468B9B819290CA900FA74DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E468B9D419290D2300FA74DC /* CodaLess.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E468B9C819290CAA00FA74DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E468B9C919290CAA00FA74DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E468B9CC19290CAA00FA74DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E468B9CD19290CAA00FA74DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E468B9CF19290CAA00FA74DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodaLess/CodaLess-Prefix.pch";
+				INFOPLIST_FILE = "CodaLess/CodaLess-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = codaplugin;
+			};
+			name = Debug;
+		};
+		E468B9D019290CAA00FA74DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodaLess/CodaLess-Prefix.pch";
+				INFOPLIST_FILE = "CodaLess/CodaLess-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = codaplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E468B9B719290CA800FA74DC /* Build configuration list for PBXProject "CodaLess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E468B9CC19290CAA00FA74DC /* Debug */,
+				E468B9CD19290CAA00FA74DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E468B9CE19290CAA00FA74DC /* Build configuration list for PBXNativeTarget "CodaLess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E468B9CF19290CAA00FA74DC /* Debug */,
+				E468B9D019290CAA00FA74DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E468B9B419290CA800FA74DC /* Project object */;
+}
