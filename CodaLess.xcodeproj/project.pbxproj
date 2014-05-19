@@ -11,6 +11,8 @@
 		E468B9CA19290CAA00FA74DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E468B9C819290CAA00FA74DC /* InfoPlist.strings */; };
 		E468B9D419290D2300FA74DC /* CodaLess.m in Sources */ = {isa = PBXBuildFile; fileRef = E468B9D319290D2300FA74DC /* CodaLess.m */; };
 		E468BDA51929170900FA74DC /* less.js in Resources */ = {isa = PBXBuildFile; fileRef = E468BDA41929170900FA74DC /* less.js */; };
+		E4BB3E53192A5BCB0040832B /* CodaLessPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BB3E51192A5BCB0040832B /* CodaLessPreferencesWindowController.m */; };
+		E4BB3E54192A5BCB0040832B /* CodaLessPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BB3E52192A5BCB0040832B /* CodaLessPreferencesWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		E468B9D219290D2300FA74DC /* CodaLess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodaLess.h; sourceTree = "<group>"; };
 		E468B9D319290D2300FA74DC /* CodaLess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodaLess.m; sourceTree = "<group>"; };
 		E468BDA41929170900FA74DC /* less.js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = less.js; sourceTree = SOURCE_ROOT; };
+		E4BB3E50192A5BCB0040832B /* CodaLessPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodaLessPreferencesWindowController.h; sourceTree = "<group>"; };
+		E4BB3E51192A5BCB0040832B /* CodaLessPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodaLessPreferencesWindowController.m; sourceTree = "<group>"; };
+		E4BB3E52192A5BCB0040832B /* CodaLessPreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CodaLessPreferencesWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +99,9 @@
 				E468B9D219290D2300FA74DC /* CodaLess.h */,
 				E468B9D319290D2300FA74DC /* CodaLess.m */,
 				E468BDA41929170900FA74DC /* less.js */,
+				E4BB3E50192A5BCB0040832B /* CodaLessPreferencesWindowController.h */,
+				E4BB3E51192A5BCB0040832B /* CodaLessPreferencesWindowController.m */,
+				E4BB3E52192A5BCB0040832B /* CodaLessPreferencesWindowController.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E468B9CA19290CAA00FA74DC /* InfoPlist.strings in Resources */,
+				E4BB3E54192A5BCB0040832B /* CodaLessPreferencesWindowController.xib in Resources */,
 				E468BDA51929170900FA74DC /* less.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4BB3E53192A5BCB0040832B /* CodaLessPreferencesWindowController.m in Sources */,
 				E468B9D419290D2300FA74DC /* CodaLess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +304,7 @@
 				E468B9D019290CAA00FA74DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

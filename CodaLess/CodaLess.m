@@ -8,14 +8,23 @@
 
 #import "CodaPlugInsController.h"
 #import "CodaLess.h"
+#import "CodaLessPreferencesWindowController.h"
 
 @implementation CodaLess {
     NSObject<CodaPlugInBundle> *bundle;
+    NSUserDefaults *ud;
+    CodaLessPreferencesWindowController *pref;
 }
 
 - (id)initWithPlugInController:(CodaPlugInsController*)aController plugInBundle:(NSObject <CodaPlugInBundle>*)plugInBundle {
     self = [super init];
+    
     bundle = plugInBundle;
+    ud = [NSUserDefaults standardUserDefaults];
+    [ud registerDefaults:@{@"cssPath": @"{path}/{basename}.css", @"minify": @NO}];
+    
+    [aController registerActionWithTitle:@"CodaLess Preferences" underSubmenuWithTitle:nil target:self selector:@selector(showPreferences) representedObject:nil keyEquivalent:nil pluginName:[self name]];
+    
     return self;
 }
 
@@ -29,11 +38,21 @@
     
     if(![[path pathExtension] isEqualToString:@"less"]) return;
     
-    NSString *cssPath = [[path stringByDeletingPathExtension] stringByAppendingPathExtension:@"css"];
+    NSString *ipath = [path stringByDeletingLastPathComponent];
+    NSString *basename = [[path lastPathComponent] stringByDeletingPathExtension];
+    
+    NSString *format = [ud stringForKey:@"cssPath"];
+    NSString *cssPath = [[format stringByReplacingOccurrencesOfString:@"{path}" withString:ipath] stringByReplacingOccurrencesOfString:@"{basename}" withString:basename];
     
     NSTask *task = [[NSTask alloc] init];
     task.launchPath = [bundle.resourcePath stringByAppendingPathComponent:@"less.js/bin/lessc"];
-    task.arguments = @[path,cssPath,@"--no-color"];
+    
+    NSMutableArray *lessargs = [NSMutableArray arrayWithObjects:path,cssPath,@"--no-color",nil];
+    if([ud boolForKey:@"minify"]){
+        [lessargs addObject:@"-x"];
+    }
+    
+    task.arguments = lessargs;
     
     NSPipe *outputPipe = [NSPipe pipe];
     [task setStandardError:outputPipe];
@@ -45,6 +64,13 @@
         }
     }];
     [task launch];
+}
+
+- (void)showPreferences {
+    if(pref == nil){
+        pref = [[CodaLessPreferencesWindowController alloc] init];
+    }
+    [pref showWindow:self];
 }
 
 @end

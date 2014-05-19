@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E468B9BB19290CA900FA74DC"
-               BuildableName = "CodaLess.bundle"
+               BuildableName = "CodaLess.codaplugin"
                BlueprintName = "CodaLess"
                ReferencedContainer = "container:CodaLess.xcodeproj">
             </BuildableReference>
