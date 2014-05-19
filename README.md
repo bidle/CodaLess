@@ -9,7 +9,7 @@ You need to have node.js installed. Go to http://nodejs.org to install nodejs if
 
 #Usage
 
-Whenever you save a less file it will be compiled and the output will be saved into the same directory.
+Whenever you save a less file it will be compiled.
 
 #Preferences
 
