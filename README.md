@@ -1,7 +1,7 @@
 CodaLess
 ========
 
-Minimalistic Coda Plugin for compiling less on save
+Small Coda plug-in that compiles less files on save.
 
 #Install
 
