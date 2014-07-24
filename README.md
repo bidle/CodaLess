@@ -1,11 +1,13 @@
 CodaLess
 ========
 
-Minimalistic Coda Plugin for compiling less on save
+Small Coda plug-in that compiles less files on save.
 
 #Install
 
-You need to have node.js installed. Go to http://nodejs.org to install nodejs if you haven't already. Copy `CodaLess.plugin` to `~/Library/Application Support/Coda 2/Plug-ins`.
+You need to have node.js installed. If you haven't already installed node.js go to http://nodejs.org to do so. 
+
+To install the plugin double click `CodaLess.codaplugin` or copy it to `~/Library/Application Support/Coda 2/Plug-ins`.
 
 #Usage
 
