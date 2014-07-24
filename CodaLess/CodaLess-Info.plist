@@ -28,5 +28,9 @@
 	<string>CodaLess</string>
 	<key>CodaPlugInMinimumAPIVersion</key>
 	<string>6</string>
+	<key>CodaAuthorString</key>
+	<string>Theo Weidmann</string>
+	<key>CodaDescriptionString</key>
+	<string>Small Coda plug-in that compiles less files on save.</string>
 </dict>
 </plist>
