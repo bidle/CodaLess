@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6756ABB5-DB5D-4813-A4FC-821509179FBA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CodaLess</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0084E6E980AF205B3F3BEBDE7576CD11BD0402C4</key>
+		<string>https://github.com/idmean/CodaLess.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CodaLess.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0084E6E980AF205B3F3BEBDE7576CD11BD0402C4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/idmean/CodaLess.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0084E6E980AF205B3F3BEBDE7576CD11BD0402C4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0084E6E980AF205B3F3BEBDE7576CD11BD0402C4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CodaLess</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -7,101 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E468B9C019290CAA00FA74DC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E468B9BF19290CAA00FA74DC /* Cocoa.framework */; };
-		E468B9CA19290CAA00FA74DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E468B9C819290CAA00FA74DC /* InfoPlist.strings */; };
-		E468B9D419290D2300FA74DC /* CodaLess.m in Sources */ = {isa = PBXBuildFile; fileRef = E468B9D319290D2300FA74DC /* CodaLess.m */; };
-		E468BDA51929170900FA74DC /* less.js in Resources */ = {isa = PBXBuildFile; fileRef = E468BDA41929170900FA74DC /* less.js */; };
-		E4BB3E53192A5BCB0040832B /* CodaLessPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BB3E51192A5BCB0040832B /* CodaLessPreferencesWindowController.m */; };
-		E4BB3E54192A5BCB0040832B /* CodaLessPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BB3E52192A5BCB0040832B /* CodaLessPreferencesWindowController.xib */; };
+		E421AE5D1A3263F40043CC92 /* CodaLessPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E421AE5C1A3263F40043CC92 /* CodaLessPreferencesWindowController.xib */; };
+		E421AE5F1A3264750043CC92 /* CodaLessPrefrencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E421AE5E1A3264750043CC92 /* CodaLessPrefrencesWindowController.swift */; };
+		E467F05D1A325AC1005FE060 /* CodaLess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467F05C1A325AC1005FE060 /* CodaLess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E468B9BC19290CA900FA74DC /* CodaLess.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodaLess.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
-		E468B9BF19290CAA00FA74DC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		E468B9C219290CAA00FA74DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E468B9C319290CAA00FA74DC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		E468B9C419290CAA00FA74DC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		E468B9C719290CAA00FA74DC /* CodaLess-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CodaLess-Info.plist"; sourceTree = "<group>"; };
-		E468B9C919290CAA00FA74DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E468B9CB19290CAA00FA74DC /* CodaLess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodaLess-Prefix.pch"; sourceTree = "<group>"; };
-		E468B9D119290CFD00FA74DC /* CodaPlugInsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
-		E468B9D219290D2300FA74DC /* CodaLess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodaLess.h; sourceTree = "<group>"; };
-		E468B9D319290D2300FA74DC /* CodaLess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodaLess.m; sourceTree = "<group>"; };
-		E468BDA41929170900FA74DC /* less.js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = less.js; sourceTree = SOURCE_ROOT; };
-		E4BB3E50192A5BCB0040832B /* CodaLessPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodaLessPreferencesWindowController.h; sourceTree = "<group>"; };
-		E4BB3E51192A5BCB0040832B /* CodaLessPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodaLessPreferencesWindowController.m; sourceTree = "<group>"; };
-		E4BB3E52192A5BCB0040832B /* CodaLessPreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CodaLessPreferencesWindowController.xib; sourceTree = "<group>"; };
+		E421AE5C1A3263F40043CC92 /* CodaLessPreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CodaLessPreferencesWindowController.xib; sourceTree = "<group>"; };
+		E421AE5E1A3264750043CC92 /* CodaLessPrefrencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodaLessPrefrencesWindowController.swift; sourceTree = "<group>"; };
+		E467F0501A3259C4005FE060 /* CodaLess.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodaLess.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E467F0541A3259C4005FE060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E467F05A1A325A66005FE060 /* CodaPlugInsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
+		E467F05B1A325AC1005FE060 /* CodaLess-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodaLess-Bridging-Header.h"; sourceTree = "<group>"; };
+		E467F05C1A325AC1005FE060 /* CodaLess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodaLess.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E468B9B919290CA900FA74DC /* Frameworks */ = {
+		E467F04D1A3259C4005FE060 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E468B9C019290CAA00FA74DC /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E468B9B319290CA700FA74DC = {
+		E467F0471A3259C4005FE060 = {
 			isa = PBXGroup;
 			children = (
-				E468B9C519290CAA00FA74DC /* CodaLess */,
-				E468B9BE19290CA900FA74DC /* Frameworks */,
-				E468B9BD19290CA900FA74DC /* Products */,
+				E467F0521A3259C4005FE060 /* CodaLess */,
+				E467F0511A3259C4005FE060 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E468B9BD19290CA900FA74DC /* Products */ = {
+		E467F0511A3259C4005FE060 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E468B9BC19290CA900FA74DC /* CodaLess.codaplugin */,
+				E467F0501A3259C4005FE060 /* CodaLess.codaplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E468B9BE19290CA900FA74DC /* Frameworks */ = {
+		E467F0521A3259C4005FE060 /* CodaLess */ = {
 			isa = PBXGroup;
 			children = (
-				E468B9BF19290CAA00FA74DC /* Cocoa.framework */,
-				E468B9C119290CAA00FA74DC /* Other Frameworks */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E468B9C119290CAA00FA74DC /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E468B9C219290CAA00FA74DC /* Foundation.framework */,
-				E468B9C319290CAA00FA74DC /* CoreData.framework */,
-				E468B9C419290CAA00FA74DC /* AppKit.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		E468B9C519290CAA00FA74DC /* CodaLess */ = {
-			isa = PBXGroup;
-			children = (
-				E468B9C619290CAA00FA74DC /* Supporting Files */,
+				E467F05A1A325A66005FE060 /* CodaPlugInsController.h */,
+				E467F05B1A325AC1005FE060 /* CodaLess-Bridging-Header.h */,
+				E467F0531A3259C4005FE060 /* Supporting Files */,
+				E467F05C1A325AC1005FE060 /* CodaLess.swift */,
+				E421AE5C1A3263F40043CC92 /* CodaLessPreferencesWindowController.xib */,
+				E421AE5E1A3264750043CC92 /* CodaLessPrefrencesWindowController.swift */,
 			);
 			path = CodaLess;
 			sourceTree = "<group>";
 		};
-		E468B9C619290CAA00FA74DC /* Supporting Files */ = {
+		E467F0531A3259C4005FE060 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E468B9C719290CAA00FA74DC /* CodaLess-Info.plist */,
-				E468B9D119290CFD00FA74DC /* CodaPlugInsController.h */,
-				E468B9C819290CAA00FA74DC /* InfoPlist.strings */,
-				E468B9CB19290CAA00FA74DC /* CodaLess-Prefix.pch */,
-				E468B9D219290D2300FA74DC /* CodaLess.h */,
-				E468B9D319290D2300FA74DC /* CodaLess.m */,
-				E468BDA41929170900FA74DC /* less.js */,
-				E4BB3E50192A5BCB0040832B /* CodaLessPreferencesWindowController.h */,
-				E4BB3E51192A5BCB0040832B /* CodaLessPreferencesWindowController.m */,
-				E4BB3E52192A5BCB0040832B /* CodaLessPreferencesWindowController.xib */,
+				E467F0541A3259C4005FE060 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,13 +73,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E468B9BB19290CA900FA74DC /* CodaLess */ = {
+		E467F04F1A3259C4005FE060 /* CodaLess */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E468B9CE19290CAA00FA74DC /* Build configuration list for PBXNativeTarget "CodaLess" */;
+			buildConfigurationList = E467F0571A3259C4005FE060 /* Build configuration list for PBXNativeTarget "CodaLess" */;
 			buildPhases = (
-				E468B9B819290CA900FA74DC /* Sources */,
-				E468B9B919290CA900FA74DC /* Frameworks */,
-				E468B9BA19290CA900FA74DC /* Resources */,
+				E467F04C1A3259C4005FE060 /* Sources */,
+				E467F04D1A3259C4005FE060 /* Frameworks */,
+				E467F04E1A3259C4005FE060 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -123,73 +87,65 @@
 			);
 			name = CodaLess;
 			productName = CodaLess;
-			productReference = E468B9BC19290CA900FA74DC /* CodaLess.codaplugin */;
+			productReference = E467F0501A3259C4005FE060 /* CodaLess.codaplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E468B9B419290CA800FA74DC /* Project object */ = {
+		E467F0481A3259C4005FE060 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Theo Weidmann";
+				TargetAttributes = {
+					E467F04F1A3259C4005FE060 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
 			};
-			buildConfigurationList = E468B9B719290CA800FA74DC /* Build configuration list for PBXProject "CodaLess" */;
+			buildConfigurationList = E467F04B1A3259C4005FE060 /* Build configuration list for PBXProject "CodaLess" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E468B9B319290CA700FA74DC;
-			productRefGroup = E468B9BD19290CA900FA74DC /* Products */;
+			mainGroup = E467F0471A3259C4005FE060;
+			productRefGroup = E467F0511A3259C4005FE060 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E468B9BB19290CA900FA74DC /* CodaLess */,
+				E467F04F1A3259C4005FE060 /* CodaLess */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E468B9BA19290CA900FA74DC /* Resources */ = {
+		E467F04E1A3259C4005FE060 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E468B9CA19290CAA00FA74DC /* InfoPlist.strings in Resources */,
-				E4BB3E54192A5BCB0040832B /* CodaLessPreferencesWindowController.xib in Resources */,
-				E468BDA51929170900FA74DC /* less.js in Resources */,
+				E421AE5D1A3263F40043CC92 /* CodaLessPreferencesWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E468B9B819290CA900FA74DC /* Sources */ = {
+		E467F04C1A3259C4005FE060 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4BB3E53192A5BCB0040832B /* CodaLessPreferencesWindowController.m in Sources */,
-				E468B9D419290D2300FA74DC /* CodaLess.m in Sources */,
+				E421AE5F1A3264750043CC92 /* CodaLessPrefrencesWindowController.swift in Sources */,
+				E467F05D1A325AC1005FE060 /* CodaLess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		E468B9C819290CAA00FA74DC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E468B9C919290CAA00FA74DC /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		E468B9CC19290CAA00FA74DC /* Debug */ = {
+		E467F0551A3259C4005FE060 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -204,11 +160,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -221,13 +178,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		E468B9CD19290CAA00FA74DC /* Release */ = {
+		E467F0561A3259C4005FE060 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,45 +200,60 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		E468B9CF19290CAA00FA74DC /* Debug */ = {
+		E467F0581A3259C4005FE060 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CodaLess/CodaLess-Prefix.pch";
-				INFOPLIST_FILE = "CodaLess/CodaLess-Info.plist";
+				DEFINES_MODULE = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = CodaLess/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CodaLess/CodaLess-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = codaplugin;
 			};
 			name = Debug;
 		};
-		E468B9D019290CAA00FA74DC /* Release */ = {
+		E467F0591A3259C4005FE060 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CodaLess/CodaLess-Prefix.pch";
-				INFOPLIST_FILE = "CodaLess/CodaLess-Info.plist";
+				DEFINES_MODULE = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = CodaLess/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CodaLess/CodaLess-Bridging-Header.h";
 				WRAPPER_EXTENSION = codaplugin;
 			};
 			name = Release;
@@ -288,25 +261,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E468B9B719290CA800FA74DC /* Build configuration list for PBXProject "CodaLess" */ = {
+		E467F04B1A3259C4005FE060 /* Build configuration list for PBXProject "CodaLess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E468B9CC19290CAA00FA74DC /* Debug */,
-				E468B9CD19290CAA00FA74DC /* Release */,
+				E467F0551A3259C4005FE060 /* Debug */,
+				E467F0561A3259C4005FE060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E468B9CE19290CAA00FA74DC /* Build configuration list for PBXNativeTarget "CodaLess" */ = {
+		E467F0571A3259C4005FE060 /* Build configuration list for PBXNativeTarget "CodaLess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E468B9CF19290CAA00FA74DC /* Debug */,
-				E468B9D019290CAA00FA74DC /* Release */,
+				E467F0581A3259C4005FE060 /* Debug */,
+				E467F0591A3259C4005FE060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E468B9B419290CA800FA74DC /* Project object */;
+	rootObject = E467F0481A3259C4005FE060 /* Project object */;
 }
