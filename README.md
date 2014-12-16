@@ -11,7 +11,7 @@ Then you must have installed less (at /usr/local/lib/node_modules/less/bin/lessc
 
 	sudo npm install -g less
 
-To install the plugin double click `CodaLess.codaplugin` or copy it to `~/Library/Application Support/Coda 2/Plug-ins`.
+You can download the plugin from [Panic](http://panic.com/coda/plugins.php#Plugins) (the topmost plug in) or if you want to be sure to get the latest build download the zip from the [releases page](https://github.com/idmean/CodaLess/releases).
 
 #Usage
 
