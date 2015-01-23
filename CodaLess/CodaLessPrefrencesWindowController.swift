@@ -38,7 +38,7 @@ class CodaLessPrefrencesWindowController: NSWindowController, NSTextFieldDelegat
             task.terminationHandler = { (task: NSTask!) in
                 let string = NSString(data: outputPipe.fileHandleForReading.readDataToEndOfFile(), encoding: NSUTF8StringEncoding)
                 
-                if string != nil {
+                if string != nil && string!.length != 0 {
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         
                         self.progress.stopAnimation(self)
@@ -46,6 +46,11 @@ class CodaLessPrefrencesWindowController: NSWindowController, NSTextFieldDelegat
                         return
                         
                     })
+                }
+                else {
+                    self.progress.stopAnimation(self)
+                    self.version.stringValue = "Less version could not be determined"
+                    return
                 }
             }
             

@@ -22,13 +22,3 @@ Whenever you save a less file (file with extension `.less`) it will be compiled.
 Go to `Plug-ins > CodaLess Preferences` in Coda. It's currently possible to change the output path and to minify output.
 
 ![Preferences Screen Shot](preferences.png?raw=true)
-
-## Change Log
-
-### 2.0.0
-
-- Plug-in rewritten in Swift (blazing fast!)
-- Using installed Less, no longer contains own compiler
-- Improvements by taking advantage of queues 
-- Not compiling remote files
-- Introducing "Jump to error"
