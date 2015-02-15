@@ -109,7 +109,15 @@ class CodaLess: NSObject, CodaPlugIn {
                     dispatch_async(dispatch_get_main_queue()) {
                         
                         if alert.runModal() == NSAlertSecondButtonReturn {
-                            textView.goToLine(errLine!, column: errCol!)
+                            if errLine != nil && errCol != nil {
+                                textView.goToLine(errLine!, column: errCol!)
+                            }
+                            else {
+                                let alert = NSAlert()
+                                alert.messageText = "Could not determine error position"
+                                alert.informativeText = "CodaLess was not able to determine the position of the error. Please submit an issue on https://github.com/idmean/CodaLess/issues including your less version!"
+                                alert.runModal()
+                            }
                         }
                         return
                         
