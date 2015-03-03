@@ -26,36 +26,44 @@ class CodaLessPrefrencesWindowController: NSWindowController, NSTextFieldDelegat
             pathField.stringValue = format
         }
         
-        progress.startAnimation(self)
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -> Void in
-            let task = NSTask()
-            task.launchPath = "/usr/local/bin/node"
-            task.arguments = ["/usr/local/lib/node_modules/less/bin/lessc", "-v"]
-            
-            let outputPipe = NSPipe()
-            
-            task.standardOutput = outputPipe
-            task.terminationHandler = { (task: NSTask!) in
-                let string = NSString(data: outputPipe.fileHandleForReading.readDataToEndOfFile(), encoding: NSUTF8StringEncoding)
+        if !NSFileManager.defaultManager().fileExistsAtPath("/usr/local/bin/node") {
+            version.stringValue = "Node not in place"
+        }
+        else if !NSFileManager.defaultManager().fileExistsAtPath("/usr/local/lib/node_modules/less/bin/lessc"){
+            version.stringValue = "Less not in place"
+        }
+        else {
+            progress.startAnimation(self)
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -> Void in
+                let task = NSTask()
+                task.launchPath = "/usr/local/bin/node"
+                task.arguments = ["/usr/local/lib/node_modules/less/bin/lessc", "-v"]
                 
-                if string != nil && string!.length != 0 {
-                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                        
+                let outputPipe = NSPipe()
+                
+                task.standardOutput = outputPipe
+                task.terminationHandler = { (task: NSTask!) in
+                    let string = NSString(data: outputPipe.fileHandleForReading.readDataToEndOfFile(), encoding: NSUTF8StringEncoding)
+                    
+                    if string != nil && string!.length != 0 {
+                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                            
+                            self.progress.stopAnimation(self)
+                            self.version.stringValue = "Less Version: " + string!.substringWithRange(NSRange(location: 6,length: 5))
+                            return
+                            
+                        })
+                    }
+                    else {
                         self.progress.stopAnimation(self)
-                        self.version.stringValue = "Less Version: " + string!.substringWithRange(NSRange(location: 6,length: 5))
+                        self.version.stringValue = "Less version could not be determined"
                         return
-                        
-                    })
+                    }
                 }
-                else {
-                    self.progress.stopAnimation(self)
-                    self.version.stringValue = "Less version could not be determined"
-                    return
-                }
-            }
-            
-            task.launch()
-        })
+                
+                task.launch()
+            })
+        }
     }
 
     @IBAction func minifyChanged(sender: AnyObject) {
