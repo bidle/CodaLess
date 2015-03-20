@@ -20,7 +20,7 @@ class CodaLess: NSObject, CodaPlugIn {
         
         userDefaults.registerDefaults([
             "cssPath": "{path}/{basename}.css",
-            "minify": false
+            "cleanCSS": false
             ])
         
         super.init()
@@ -42,6 +42,16 @@ class CodaLess: NSObject, CodaPlugIn {
                 alert.informativeText = "The less compiler could not be found at /usr/local/lib/node_modules/less/bin/lessc."
                 alert.runModal()
             })
+        }
+        
+        if userDefaults.boolForKey("minify") {
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                let alert = NSAlert()
+                alert.messageText = "CodaLess: Less minify deprecation"
+                alert.informativeText = "The less developers deprecated the minify option. Therefore the minify option was removed, however you can now choose to enable the Clean CSS plugin in the preferences."
+                alert.runModal()
+            })
+            userDefaults.removeObjectForKey("minify")
         }
     }
 
@@ -68,8 +78,8 @@ class CodaLess: NSObject, CodaPlugIn {
             task.launchPath = "/usr/local/bin/node"
             
             var args = ["/usr/local/lib/node_modules/less/bin/lessc", path, cssPath, "--no-color"]
-            if userDefaults.boolForKey("minify") {
-                args.append("-x")
+            if userDefaults.boolForKey("cleanCSS") {
+                args.append("--clean-css")
             }
             
             task.arguments = args

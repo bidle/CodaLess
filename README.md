@@ -13,12 +13,24 @@ Then you must have installed less (at /usr/local/lib/node_modules/less/bin/lessc
 
 You can download the plugin from [Panic](http://panic.com/coda/plugins.php#Plugins) (the topmost plug in) or if you want to be sure to get the latest build download the zip from the [releases page](https://github.com/idmean/CodaLess/releases).
 
+#Supported Less Versions
+
+CodaLess officially supports less 2.2.0 and above.
+
+#Minify using Clean CSS
+
+As of 2.0.4 CodaLess no longer uses less’ minify option (which was deprecated in less 2.2.0) but the Clean CSS plugin for less which you can install by running:
+
+    sudo npm install -g less-plugin-clean-css
+
+You then need to check the `Use Clean CSS Plugin` in the preferences.
+
 #Usage
 
 Whenever you save a less file (file with extension `.less`) it will be compiled.
 
 #Preferences
 
-Go to `Plug-ins > CodaLess Preferences` in Coda. It's currently possible to change the output path and to minify output.
+Go to `Plug-ins > CodaLess Preferences` in Coda.
 
 ![Preferences Screen Shot](preferences.png?raw=true)

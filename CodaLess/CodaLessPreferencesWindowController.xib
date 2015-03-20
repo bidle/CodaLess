@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="CodaLessPrefrencesWindowController" customModule="CodaLess" customModuleProvider="target">
@@ -19,14 +19,14 @@
         <window title="CodaLess Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="480" height="134"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="168"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="134"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="168"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bmc-CP-UNy">
-                        <rect key="frame" x="20" y="92" width="440" height="22"/>
+                        <rect key="frame" x="20" y="126" width="440" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Output Path for CSS file" drawsBackground="YES" id="kE7-86-Zgm">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -37,7 +37,7 @@
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obD-hg-yQF">
-                        <rect key="frame" x="20" y="42" width="442" height="42"/>
+                        <rect key="frame" x="20" y="76" width="442" height="42"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="PWW-J0-mIU">
                             <font key="font" metaFont="smallSystem"/>
                             <string key="title">Specify the output path for the compiled CSS file. {path} will be replaced with the directory containing the less file. {basename} will be replaced with the filename (without ".less" extension). Please don't use relative paths to your project root. </string>
@@ -45,23 +45,15 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J4f-Kx-H1o">
-                        <rect key="frame" x="356" y="17" width="106" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Fetching version" id="Olr-A0-QZs">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="bLV-HW-zn6">
-                        <rect key="frame" x="334" y="17" width="16" height="16"/>
+                        <rect key="frame" x="22" y="20" width="16" height="16"/>
                     </progressIndicator>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="QNg-Kg-GQi">
-                        <rect key="frame" x="20" y="16" width="134" height="18"/>
+                        <rect key="frame" x="20" y="47" width="159" height="18"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="130" id="U8o-7P-KTe"/>
+                            <constraint firstAttribute="width" constant="155" id="U8o-7P-KTe"/>
                         </constraints>
-                        <buttonCell key="cell" type="check" title="Minify CSS output" bezelStyle="regularSquare" imagePosition="left" inset="2" id="7iT-Wk-a8d">
+                        <buttonCell key="cell" type="check" title="Use Clean CSS Plugin" bezelStyle="regularSquare" imagePosition="left" inset="2" id="7iT-Wk-a8d">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -69,25 +61,46 @@
                             <action selector="minifyChanged:" target="-2" id="vrE-By-hsg"/>
                         </connections>
                     </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J4f-Kx-H1o">
+                        <rect key="frame" x="44" y="20" width="389" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Fetching version" id="Olr-A0-QZs">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jkg-Q6-5cr">
+                        <rect key="frame" x="437" y="12" width="25" height="25"/>
+                        <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="m2Z-AT-Hea">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="openHelp:" target="-2" id="I8L-M8-EG5"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Bmc-CP-UNy" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="4Qc-fF-nPv"/>
+                    <constraint firstItem="bLV-HW-zn6" firstAttribute="top" secondItem="obD-hg-yQF" secondAttribute="bottom" constant="40" id="9Uh-GN-A9P"/>
                     <constraint firstItem="QNg-Kg-GQi" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="22" id="J2c-Va-SEN"/>
-                    <constraint firstAttribute="bottom" secondItem="J4f-Kx-H1o" secondAttribute="bottom" constant="17" id="Lgb-0J-FKE"/>
+                    <constraint firstItem="J4f-Kx-H1o" firstAttribute="top" secondItem="obD-hg-yQF" secondAttribute="bottom" constant="39" id="NpQ-rV-tro"/>
+                    <constraint firstItem="J4f-Kx-H1o" firstAttribute="leading" secondItem="obD-hg-yQF" secondAttribute="trailing" constant="-414" id="aVe-eG-Z8I"/>
                     <constraint firstItem="J4f-Kx-H1o" firstAttribute="centerY" secondItem="bLV-HW-zn6" secondAttribute="centerY" id="asS-pP-9XL"/>
                     <constraint firstItem="obD-hg-yQF" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="22" id="bCU-2e-3IN"/>
-                    <constraint firstItem="QNg-Kg-GQi" firstAttribute="top" secondItem="obD-hg-yQF" secondAttribute="bottom" constant="10" id="bWx-5z-fs0"/>
+                    <constraint firstItem="QNg-Kg-GQi" firstAttribute="top" secondItem="obD-hg-yQF" secondAttribute="bottom" constant="13" id="bWx-5z-fs0"/>
                     <constraint firstAttribute="trailing" secondItem="obD-hg-yQF" secondAttribute="trailing" constant="20" id="kTo-3K-2Fk"/>
                     <constraint firstAttribute="trailing" secondItem="Bmc-CP-UNy" secondAttribute="trailing" constant="20" id="kcy-iW-yK2"/>
                     <constraint firstItem="obD-hg-yQF" firstAttribute="top" secondItem="Bmc-CP-UNy" secondAttribute="bottom" constant="8" id="mFR-AP-r3T"/>
                     <constraint firstItem="Bmc-CP-UNy" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="o8B-Mo-zMy"/>
-                    <constraint firstAttribute="trailing" secondItem="J4f-Kx-H1o" secondAttribute="trailing" constant="20" id="prE-uH-4DF"/>
+                    <constraint firstAttribute="trailing" secondItem="J4f-Kx-H1o" secondAttribute="trailing" constant="49" id="prE-uH-4DF"/>
                     <constraint firstItem="J4f-Kx-H1o" firstAttribute="leading" secondItem="bLV-HW-zn6" secondAttribute="trailing" constant="8" id="unT-4X-2Da"/>
                 </constraints>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
+            <point key="canvasLocation" x="494" y="472"/>
         </window>
     </objects>
 </document>

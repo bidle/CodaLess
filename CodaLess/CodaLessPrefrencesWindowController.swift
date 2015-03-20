@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import AppKit
 
 class CodaLessPrefrencesWindowController: NSWindowController, NSTextFieldDelegate {
   
@@ -20,7 +21,7 @@ class CodaLessPrefrencesWindowController: NSWindowController, NSTextFieldDelegat
     override func windowDidLoad() {
         super.windowDidLoad()
         
-        minifyButton.state = userDefaults.boolForKey("minify") ? 1 : 0
+        minifyButton.state = userDefaults.boolForKey("cleanCSS") ? 1 : 0
         
         if let format = userDefaults.stringForKey("cssPath") {
             pathField.stringValue = format
@@ -48,8 +49,18 @@ class CodaLessPrefrencesWindowController: NSWindowController, NSTextFieldDelegat
                     if string != nil && string!.length != 0 {
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
                             
+                            let version = string!.substringWithRange(NSRange(location: 6,length: 5))
+                            
                             self.progress.stopAnimation(self)
-                            self.version.stringValue = "Less Version: " + string!.substringWithRange(NSRange(location: 6,length: 5))
+                            
+                            if EDSemver(string: version).isLessThan(EDSemver(string: "2.2.0")) {
+                                self.version.textColor = NSColor.redColor()
+                                self.version.stringValue = "Less Version: \(version). Please update or click the ?."
+                            }
+                            else {
+                                self.version.stringValue = "Less Version: " + version
+                            }
+                            
                             return
                             
                         })
@@ -67,7 +78,11 @@ class CodaLessPrefrencesWindowController: NSWindowController, NSTextFieldDelegat
     }
 
     @IBAction func minifyChanged(sender: AnyObject) {
-        userDefaults.setBool(minifyButton.state == 1, forKey: "minify")
+        userDefaults.setBool(minifyButton.state == 1, forKey: "cleanCSS")
+    }
+    
+    @IBAction func openHelp(sender: AnyObject) {
+        NSWorkspace.sharedWorkspace().openURL(NSURL(string: "https://github.com/idmean/CodaLess")!)
     }
     
     override func controlTextDidChange(obj: NSNotification) {

@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		E421AE5D1A3263F40043CC92 /* CodaLessPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E421AE5C1A3263F40043CC92 /* CodaLessPreferencesWindowController.xib */; };
 		E421AE5F1A3264750043CC92 /* CodaLessPrefrencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E421AE5E1A3264750043CC92 /* CodaLessPrefrencesWindowController.swift */; };
+		E45A1D251ABC746F001A1A42 /* EDSemver.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A1D241ABC746F001A1A42 /* EDSemver.m */; };
 		E467F05D1A325AC1005FE060 /* CodaLess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467F05C1A325AC1005FE060 /* CodaLess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E421AE5C1A3263F40043CC92 /* CodaLessPreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CodaLessPreferencesWindowController.xib; sourceTree = "<group>"; };
 		E421AE5E1A3264750043CC92 /* CodaLessPrefrencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodaLessPrefrencesWindowController.swift; sourceTree = "<group>"; };
+		E45A1D231ABC746F001A1A42 /* EDSemver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSemver.h; sourceTree = "<group>"; };
+		E45A1D241ABC746F001A1A42 /* EDSemver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSemver.m; sourceTree = "<group>"; };
 		E467F0501A3259C4005FE060 /* CodaLess.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodaLess.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E467F0541A3259C4005FE060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E467F05A1A325A66005FE060 /* CodaPlugInsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
@@ -54,6 +57,8 @@
 			children = (
 				E467F05A1A325A66005FE060 /* CodaPlugInsController.h */,
 				E467F05B1A325AC1005FE060 /* CodaLess-Bridging-Header.h */,
+				E45A1D231ABC746F001A1A42 /* EDSemver.h */,
+				E45A1D241ABC746F001A1A42 /* EDSemver.m */,
 				E467F0531A3259C4005FE060 /* Supporting Files */,
 				E467F05C1A325AC1005FE060 /* CodaLess.swift */,
 				E421AE5C1A3263F40043CC92 /* CodaLessPreferencesWindowController.xib */,
@@ -96,7 +101,7 @@
 		E467F0481A3259C4005FE060 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Theo Weidmann";
 				TargetAttributes = {
 					E467F04F1A3259C4005FE060 = {
@@ -138,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E421AE5F1A3264750043CC92 /* CodaLessPrefrencesWindowController.swift in Sources */,
+				E45A1D251ABC746F001A1A42 /* EDSemver.m in Sources */,
 				E467F05D1A325AC1005FE060 /* CodaLess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +228,6 @@
 		E467F0581A3259C4005FE060 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
@@ -242,7 +247,6 @@
 		E467F0591A3259C4005FE060 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
