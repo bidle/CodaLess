@@ -61,6 +61,10 @@ class CodaLess: NSObject, CodaPlugIn {
     
     func textViewWillSave(textView: CodaTextView!) {
         let path = textView.path()
+        
+        if path == nil {
+            return
+        }
 
         let components = path.pathComponents.reverse()
         
@@ -94,7 +98,7 @@ class CodaLess: NSObject, CodaPlugIn {
                 if string != nil && string!.length > 0 {
                     let alert = NSAlert()
                     alert.messageText = "LESS Compilation Error"
-                    alert.informativeText = string
+                    alert.informativeText = string as? String
                     alert.addButtonWithTitle("OK")
                     
                     var err: NSError?
@@ -105,7 +109,7 @@ class CodaLess: NSObject, CodaPlugIn {
                     
                     if regex != nil {
                         
-                        let match = regex!.firstMatchInString(string!, options: NSMatchingOptions.allZeros, range: NSRange(location: 0, length: string!.length))
+                        let match = regex!.firstMatchInString(string as! String, options: NSMatchingOptions.allZeros, range: NSRange(location: 0, length: string!.length))
                         
                         if match != nil {
                             

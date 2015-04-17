@@ -28,9 +28,11 @@ class CodaLessPrefrencesWindowController: NSWindowController, NSTextFieldDelegat
         }
         
         if !NSFileManager.defaultManager().fileExistsAtPath("/usr/local/bin/node") {
+            self.version.textColor = NSColor.redColor()
             version.stringValue = "Node not in place"
         }
         else if !NSFileManager.defaultManager().fileExistsAtPath("/usr/local/lib/node_modules/less/bin/lessc"){
+            self.version.textColor = NSColor.redColor()
             version.stringValue = "Less not in place"
         }
         else {
